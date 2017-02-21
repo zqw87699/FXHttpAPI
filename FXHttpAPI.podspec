@@ -23,8 +23,8 @@ Pod::Spec.new do |s|
 
   s.requires_arc = true
 
-  s.dependency "FXLog", "~> 1.0.3"
-  s.dependency "FXCommon", "~> 1.0.0"
+  s.dependency "FXLog"
+  s.dependency "FXCommon"
   s.dependency "ReactiveObjC", "~> 2.1.2"
   s.dependency "AFNetworking", "~> 3.1.0"
 
