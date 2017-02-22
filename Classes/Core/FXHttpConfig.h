@@ -11,9 +11,9 @@
 #import "AFHTTPSessionManager.h"
 #import "IFXHttpFilter.h"
 
-AS_SINGLETON(FXHttpConfig)
+@interface FXHttpConfig:NSObject
 
-@interface FXHttpConfig
+AS_SINGLETON(FXHttpConfig)
 
 /*
  *  默认请求任务

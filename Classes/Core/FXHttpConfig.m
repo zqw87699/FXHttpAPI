@@ -8,8 +8,6 @@
 
 #import "FXHttpConfig.h"
 
-DEF_SINGLETON_INIT(FXHttpConfig)
-
 @interface FXHttpConfig ()
 
 @property (nonatomic, strong) NSMutableSet *cerSet;
@@ -23,6 +21,8 @@ DEF_SINGLETON_INIT(FXHttpConfig)
 @end
 
 @implementation FXHttpConfig
+
+DEF_SINGLETON_INIT(FXHttpConfig)
 
 - (void)singleInit{
     self.cerSet = [[NSMutableSet alloc] init];
