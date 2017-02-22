@@ -8,6 +8,8 @@
 
 #import "FXHttpConfig.h"
 
+DEF_SINGLETON_INIT(FXHttpConfig)
+
 @interface FXHttpConfig ()
 
 @property (nonatomic, strong) NSMutableSet *cerSet;
@@ -26,7 +28,7 @@
     self.cerSet = [[NSMutableSet alloc] init];
     self.defaultTimeoutDuration=60;
     self.sessionManager = [[AFHTTPSessionManager alloc] initWithSessionConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
-
+    
     //默认并发数
     [[self.sessionManager operationQueue] setMaxConcurrentOperationCount:5];
     //允许无效的SSL证书
