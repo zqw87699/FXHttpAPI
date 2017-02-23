@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name         = "FXHttpAPI"
-  s.version      = "1.0.7"
-  s.summary      = "网络请求框架"
+  s.version      = "1.0.8"
+  s.summary      = "http请求API"
 
   s.homepage     = "https://github.com/zqw87699/FXHttpAPI"
 
@@ -19,22 +19,8 @@ Pod::Spec.new do |s|
 
   s.requires_arc = true
 
-s.subspec 'Core' do |score|
-    score.source_files = 'Classes/Core/*'
-    score.public_header_files = 'Classes/Core/*.h'
-
-    score.dependency 'FXHttpAPI/API'
-    score.dependency 'FXCommon/Core'
-    score.dependency 'FXCommon/Utiles'
-    score.dependency 'ReactiveObjC', '2.1.2'
-    score.dependency 'AFNetworking', '3.1.0'
-
-end
-
-s.subspec 'API' do |sapi|
-    sapi.source_files = 'Classes/API/*'
-    sapi.public_header_files = 'Classes/API/*.h'
-end
+  s.source_files = 'Classes/*'
+  s.public_header_files = 'Classes/*.h'
 
   s.dependency "FXLog"
 
