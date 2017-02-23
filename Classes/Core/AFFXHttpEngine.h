@@ -8,8 +8,6 @@
 
 #import <Foundation/Foundation.h>
 #import "IFXHttpEngine.h"
-#import "IFXHttpRequest.h"
-#import "IFXHttpResponse.h"
 #import "FXLogMacros.h"
 
 @interface AFFXHttpEngine : NSObject<IFXHttpEngine>

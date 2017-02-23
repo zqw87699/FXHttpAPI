@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "FXHttpAPI"
-  s.version      = "1.0.4"
+  s.version      = "1.0.5"
   s.summary      = "网络请求框架"
 
   s.homepage     = "https://github.com/zqw87699/FXHttpAPI"
@@ -27,6 +27,7 @@ s.subspec 'Core' do |core|
     core.source_files = 'Classes/Core/*'
     core.public_header_files = 'Classes/Core/*.h'
 
+    core.dependency 'FXHttpAPI/API’
     core.dependency 'FXCommon/Core'
     core.dependency 'FXCommon/Utiles'
     core.dependency 'ReactiveObjC', '2.1.2'
