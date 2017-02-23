@@ -7,9 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-
-@protocol IFXHttpRequest;
-@protocol IFXHttpResponse;
+#import "IFXHttpRequest.h"
+#import "IFXHttpResponse.h"
 /**
  *  回调block
  *
